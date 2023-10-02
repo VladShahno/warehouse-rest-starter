@@ -12,7 +12,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.context.MessageSource;
 import org.springframework.context.NoSuchMessageException;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
@@ -39,8 +38,7 @@ import warehouse.com.reststarter.model.error.InformationDisclosureHandlingConfig
 
 @Slf4j
 @RequiredArgsConstructor
-@ComponentScan(basePackages = "warehouse.com")
-@ControllerAdvice(basePackages = "warehouse.com")
+@ControllerAdvice
 public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
 
   private static final String SEPARATOR = ": ";
