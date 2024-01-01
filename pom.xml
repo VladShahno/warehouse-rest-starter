@@ -76,12 +76,17 @@
           <classifier>exec</classifier>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>3.1.1</version>
+      </plugin>
     </plugins>
   </build>
 
   <distributionManagement>
     <repository>
-      <id>warehouse-rest-starter</id>
+      <id>rest-starter</id>
       <url>https://mywarehouse.jetbrains.space/p/main/repositories/warehouse-rest-starter</url>
     </repository>
   </distributionManagement>
