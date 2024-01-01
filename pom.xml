@@ -79,4 +79,11 @@
     </plugins>
   </build>
 
+  <distributionManagement>
+    <repository>
+      <id>warehouse-rest-starter</id>
+      <url>https://mywarehouse.jetbrains.space/p/main/repositories/warehouse-rest-starter</url>
+    </repository>
+  </distributionManagement>
+
 </project>
